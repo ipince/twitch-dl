@@ -1,6 +1,8 @@
 # twitch-dl
 
-Simple script to download Twitch livestreams. It uses streamlink and ffmeg to download the stream and correct any errors in the resulting video. The stream must be currently live in order for this to work.
+Simple script to download Twitch livestreams.
+
+It uses streamlink and ffmpeg to download the stream and correct any errors in the resulting video. The stream must be currently live in order for this to work.
 
 Usage:
 
