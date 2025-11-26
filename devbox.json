@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
+  "packages": [
+    "streamlink@latest",
+    "ffmpeg@latest"
+  ],
+  "shell": {
+    "scripts": {
+      "download": "streamlink \"twitch.tv/${1}\" 480p -o $2-raw.mp4 --twitch-disable-ads",
+      "fix": "ffmpeg -err_detect ignore_err -i $1-raw.mp4 -c copy $1-fixed.mp4"
+    }
+  }
+}
